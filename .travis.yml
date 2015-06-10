@@ -1,4 +1,5 @@
 language: haskell
+services: mongodb
 
 ### Taken from lens, thanks Edward!
 

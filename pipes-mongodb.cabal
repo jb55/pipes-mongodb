@@ -25,3 +25,13 @@ library
                , mongoDB
                , monad-control
                , pipes
+
+
+Test-Suite test-pipes-mongodb
+    type:       exitcode-stdio-1.0
+    main-is:    test/Test.hs
+    build-depends: base
+                 , text
+                 , mongoDB
+                 , monad-control
+                 , pipes

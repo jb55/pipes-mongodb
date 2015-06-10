@@ -16,7 +16,7 @@ import Pipes.MongoDB as MP
 import Database.MongoDB
 
 cities :: Producer (Maybe Text) (Action IO) ()
-cities = M.find (select [] "team")
+cities = MP.find (select [] "team")
      >-> P.map (look "home" >=> cast >=> look "city" >=> cast)
 ```
 

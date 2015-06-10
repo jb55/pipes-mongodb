@@ -1,6 +1,8 @@
 
 # pipes-mongodb
 
+  [![Build Status](https://travis-ci.org/jb55/pipes-mongodb.svg)](https://travis-ci.org/jb55/pipes-mongodb)
+
   Stream data from MongoDB via Pipes
 
 ## Installation

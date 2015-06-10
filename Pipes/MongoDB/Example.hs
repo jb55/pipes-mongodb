@@ -20,9 +20,9 @@ runAction a = do
 main :: IO ()
 main = runAction tasks
 
-cities :: Producer Text (Action IO) ()
+cities :: Producer (Maybe Text) (Action IO) ()
 cities = MP.find (select [] "team")
-     >-> P.mapM (look "home" >=> cast >=> look "city" >=> cast)
+     >-> P.map (look "home" >=> cast >=> look "city" >=> cast)
 
 tasks :: Action IO ()
 tasks = do

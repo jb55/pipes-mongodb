@@ -15,9 +15,9 @@
 import Pipes.MongoDB as MP
 import Database.MongoDB
 
-cities :: Producer Text (Action IO) ()
+cities :: Producer (Maybe Text) (Action IO) ()
 cities = M.find (select [] "team")
-     >-> P.mapM (look "home" >=> cast >=> look "city" >=> cast)
+     >-> P.map (look "home" >=> cast >=> look "city" >=> cast)
 ```
 
   See [Example.hs](Pipes/MongoDB/Example.hs) for full example

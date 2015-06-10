@@ -9,7 +9,7 @@ license-file:        LICENSE
 author:              William Casarin
 maintainer:          bill@casarin.me
 
-category:            Database
+category:            Database, Pipes
 build-type:          Simple
 cabal-version:       >=1.8
 

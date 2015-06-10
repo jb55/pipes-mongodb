@@ -21,11 +21,9 @@ library
   exposed-modules: Pipes.MongoDB
   default-language: Haskell98
   build-depends: base >=4.5 && < 5
-               , text
                , mongoDB
                , monad-control
                , pipes
-
 
 Test-Suite test-pipes-mongodb
     type:       exitcode-stdio-1.0

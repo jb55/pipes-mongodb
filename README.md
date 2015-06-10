@@ -22,7 +22,7 @@ cities = MP.find (select [] "team")
      >-> P.map (look "home" >=> cast >=> look "city" >=> cast)
 ```
 
-  See [Example.hs](Pipes/MongoDB/Example.hs) for full example
+  See [Test.hs](test/Test.hs) for full example
 
 ## License
 

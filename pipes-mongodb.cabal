@@ -1,0 +1,22 @@
+name:                pipes-mongodb
+version:             0.1.0.0
+synopsis:            Stream results from MongoDB
+
+homepage:            http://github.com/jb55/pipes-mongodb
+license:             MIT
+license-file:        LICENSE
+author:              William Casarin
+maintainer:          bill@casarin.me
+
+category:            Database
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  exposed-modules: Pipes.MongoDB
+  default-language: Haskell98
+  build-depends: base >=4.7 && <4.8
+               , text
+               , mongoDB
+               , monad-control
+               , pipes
